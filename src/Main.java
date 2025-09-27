@@ -5,5 +5,7 @@ public class Main {
             "Skywalker",
             19,
             1250.50);
+    
+        account.printDetails();
     }
 }
