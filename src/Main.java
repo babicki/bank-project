@@ -7,5 +7,7 @@ public class Main {
             1250.50);
     
         account.printDetails();
+
+        account.addInterest(5);
     }
 }
