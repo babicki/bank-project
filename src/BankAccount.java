@@ -20,6 +20,21 @@ public class BankAccount {
         System.out.printf("Balance (USD): $%.2f%n", this.balance);
     }
 
+    public void addInterest(double interestRate) {
+        if (interestRate < 0) {
+            System.out.println("Error! Interest rate cannot be negative.");
+        } else {
+            double interest = this.balance * (interestRate / 100);
+            double newBalance = this.balance + interest;
+            
+            System.out.printf("Interest applied: %.2f%%%n", interestRate);
+            
+            System.out.printf("New balance after interest: $%.2f%n", newBalance);
+            
+            this.balance = newBalance;
+        }
+    }
+
         public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
